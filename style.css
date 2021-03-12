@@ -1,0 +1,151 @@
+body {
+  background: #02b296;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.santa {
+  position: relative;
+  width: 210px;
+  height: 330px;
+}
+
+.hat {
+  position: absolute;
+  background: #ef5c53;
+  width: 100%;
+  height: 90px;
+  top: 30px;
+  border-radius: 100px 100px 0 0;
+  box-shadow: inset 30px 0 20px rgba(0,0,0, 0.1);
+  z-index: 1;
+}
+
+.hat:after {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 48px;
+  background: #fff;
+  border-radius: 50px;
+  top: 90px;
+  margin-left: -10%;
+  box-shadow: inset 30px 0 20px rgba(0,0,0,0.1);
+}
+
+.hat:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;;
+  background: #fff;
+  border-radius: 50%;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-shadow: inset 30px 0 20px rgba(0,0,0,0.1);
+}
+
+
+.ear {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: #ffe1c7;
+  top: 174px;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.ear.left {
+  left: -24px;
+}
+
+.ear.right {
+  right: -24px;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  border-radius: 0 0 120px 120px;
+  overflow: hidden;
+}
+
+.face i:nth-of-type(1),
+.face i:nth-of-type(2){
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  background: #ffe1c7;
+  top: 0;
+  display: block;
+  border-radius: 0 0 45% 45%;
+  overflow: hidden;
+}
+
+.face i:nth-of-type(1) {
+  left: 5%;
+}
+
+.face i:nth-of-type(2) {
+  right: 5%;
+}
+
+.eye {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #000;
+  top: 30px;
+  border-radius: 50%;
+}
+
+.eye.left{
+  left: 55px;
+}
+
+.eye.right{
+  right: 55px;
+}
+
+.nose {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ef5c53;
+  top: 48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.beard {
+  position: absolute;
+  width: 100%; 
+  height: 180px;
+  background: #f4f4f4;
+  bottom: 0;
+  border-radius: 0 0 200px 200px;
+  box-shadow: inset 0 -20px 20px rgba(0,0,0,0.1);
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
